@@ -1,0 +1,411 @@
+/*
+Theme Name: Itodo
+Theme URI: http://shtheme.com/demosd/itodo
+Author: Shtheme
+Author URI: http://shtheme.com
+Description: In 2023, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: itodo
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@media(min-width:768px) {
+    body.logged-in .sticky-header.is-fixed .clearfix {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width:601px) and (max-width:767px) {
+    body.logged-in .sticky-header.is-fixed .clearfix {
+        margin-top: 50px;
+    }
+}
+
+body.logged-in.page-template-home-2 .main-bar {
+    margin-top: 45px;
+}
+
+body.logged-in.page-template-home-2 .sticky-header.is-fixed .main-bar {
+    margin-top: 0;
+}
+
+@media(min-width:601px) and (max-width:767px) {
+    body.logged-in.page-template-home-3 .sticky-header.is-fixed .main-bar {
+        margin-top: 40px;
+    }
+}
+
+@media(min-width:768px) {
+    body.logged-in.page-template-home-3 .sticky-header.is-fixed .main-bar {
+        margin-top: 30px;
+    }
+}
+
+.elementor-section .swiper-button-next,
+.elementor-section .swiper-button-prev {
+    color: var(--white);
+    background-color: var(--primary);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: var(--transition);
+    background-image: unset;
+}
+
+.elementor-section .swiper-button-next:hover,
+.elementor-section .swiper-button-prev:hover {
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+@media(max-width: 1364px) {
+    .elementor-section .swiper-button-next,
+    .elementor-section .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+p.comment-form-cookies-consent {
+    display: none;
+}
+
+span.ajax-loader {
+    display: none !important;
+}
+
+div.wpcf7-response-output {
+    color: var(--black-color);
+    margin: 10px 0;
+}
+
+span.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
+
+.search-custom form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--title-color);
+    color: #111;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.search-custom form button {
+    border: 1px solid var(--title-color);
+    color: var(--title-color);
+    font-size: 16px;
+    height: 48px;
+    position: relative;
+    width: 48px;
+    cursor: pointer;
+    float: right;
+    background: #111;
+    margin-top: -48px;
+    padding: 0;
+    letter-spacing: 0;
+    background-color: var(--main-color);
+}
+
+.search-custom form button:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+
+.search-custom h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #020e28;
+}
+
+.comment-respond .comment-form [class*="comment-form"] input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #edecec;
+    padding: 10px 15px 10px 0px;
+    height: 40px;
+}
+
+.comment-respond input:focus-visible,
+.comment-respond textarea:focus-visible {
+    outline: none;
+}
+
+.widget_categories ul li {
+    margin-bottom: 13px;
+    position: relative;
+    padding: 0px 0px 30px 0px;
+    margin-bottom: 0;
+    line-height: 20px;
+    transition: all 0.1s linear;
+    list-style: none;
+}
+
+.widget_categories ul li a {
+    color: var(--secondary-light);
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.widget_categories ul li a:hover {
+    color: var(--primary);
+}
+
+.custom-html-widget ul {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-html-widget li {
+    display: block;
+    width: 33.333%;
+}
+
+.custom-html-widget li .sx-post-thum {
+    padding: 15px;
+}
+
+.custom-html-widget li a {
+    position: relative;
+    display: block;
+}
+
+.widget_tag_cloud a {
+    margin-right: 5px;
+}
+
+.header-nav .nav>li.menu-item-has-children:before {
+    display: none !important;
+}
+
+.widget_news .widget-post {
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.widget_news .widget-post:first-child {
+    padding-top: 0px;
+}
+
+.widget_news .widget-post:last-child {
+    margin-bottom: 0px;
+}
+
+.widget_news .widget-post:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.widget_news .sx-post-media {
+    float: left;
+    width: 90px;
+}
+
+.widget .widget-post img {
+    width: 100%;
+}
+
+.widget_news .sx-post-info {
+    background: transparent;
+    padding: 0;
+    margin-left: 115px;
+    border: none;
+}
+
+.widget_news .widget-post .sx-post-meta {
+    margin-bottom: 0px;
+}
+
+.widget_news .post-date {
+    color: #3396d1;
+}
+
+.side-bar .sx-post-meta li {
+    font-size: 13px;
+}
+
+.widget_news .section-content>div:last-child {
+    background: #fff;
+    margin: 0;
+}
+
+.sx-pagination>li>a {
+    padding: 5px 15px;
+}
+
+.sx-pagination span.current {
+    color: var(--white);
+    border-color: transparent;
+    background-color: var(--primary);
+    font-size: 14px;
+    padding: 5px 16px;
+    display: block;
+}
+
+.error-section {
+    background-color: #111;
+}
+
+.error-section .site-button {
+    margin-right: 0 !important;
+}
+
+.error-section .section-full {
+    padding-top: 0;
+}
+
+.error-section .sx-bnr-3-small-title {
+    margin-bottom: 40px !important;
+}
+
+.cons-contact-form2 input.wpcf7-submit {
+    border: none;
+}
+
+.widget_insta-gallery .sx-post-thum {
+    padding: 8px;
+}
+
+.sx-nl-form input.wpcf7-submit {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sx-nl-form div.wpcf7-response-output {
+    color: #fff;
+}
+
+.sx-nl-form div.wpcf7-validation-errors {
+    border-color: #fff;
+}
+
+.sx-nl-form span.wpcf7-not-valid-tip {
+    display: none;
+}
+
+.sx-ab-video .circle {
+    z-index: 10;
+}
+
+.sx-bnr-inr-entry .banner-title-outer h2 {
+    line-height: 1.1;
+}
+
+.header-style1 .header-nav .nav>li ul.sub-menu li:first-child>a {
+    padding-top: 20px;
+}
+
+.header-style1 .header-nav .nav>li ul.sub-menu li:last-child>a {
+    padding-bottom: 20px;
+}
+
+.stButton .stButton_gradient {
+    height: 23px !important;
+    /*    margin-top: 6%;*/
+}
+
+.blog-share-icon .stButton_gradient+.stArrow {
+    margin-top: 7%;
+}
+
+.sx-testimonial-bx-2 .sx-rating-st1 i.un-rate {
+    color: #ddd;
+}
+
+.our-team-2.white .figcaption .sx-title {
+    color: var(--white);
+}
+
+.owl-carousel-team-2 .owl-dots {
+    padding-bottom: 100px;
+}
+
+section .cons-contact-form2 span.wpcf7-not-valid-tip {
+    color: #54595F;
+}
+
+section .cons-contact-form2+p+div.wpcf7-validation-errors {
+    border: 2px solid #54595F;
+    margin-top: 15px;
+}
+
+footer div.widget_insta-gallery.widget_media_image {
+    width: 33.33%;
+    display: inline-block;
+}
+
+footer .f-instagrams {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+footer .f-instagrams .sx-f-title {
+    margin-left: 12px;
+    margin-bottom: 18px;
+}
+
+footer div.widget_insta-gallery.widget_media_image .sx-f-insta {
+    padding: 12px;
+}
+
+@media(max-width: 991px) {
+    .sx-about-bx3-outer .sx-about-bx3-content {
+        margin-bottom: 75px;
+    }
+    .sx-about-bx3-outer .sx-icon-bx-3 .sx-icon-bx-info .sx-icon-bx-title {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 300px) {
+    .elementor-widget-bdevs-slider .sx-bnr-readmore,
+    .elementor-widget-bdevs-slider-2 .sx-bnr-readmore,
+    .elementor-widget-bdevs-slider-3 .sx-bnr-readmore {
+        margin-bottom: 15px;
+    }
+}
+
+.wcu-team-bg .sx-ourteam-outer,
+.wcu-service-bg .sx-our-services-outer {
+    background-color: var(--white) !important;
+}
+
+.home2-sponsor .sx-client-logo-1-outer {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.no-js.elementor-html .sx-bnr-1-wrap-outer .sx-bnr-1-content>* {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: all 0.4s;
+}
+
+.no-js.elementor-html .sx-bnr-2-wrap-outer .sx-bnr-2-content>* {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: all 0.4s;
+}
+
+.no-js.elementor-html .sx-bnr-3-wrap-outer .sx-bnr-3-content>* {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: all 0.4s;
+}
